@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Html5新特性</h2>
+    <h3>让我们一起看看Html5新特性吧</h3>
+
+<nav>
+    <img id="bMenu" src="img/menu.png">
+    <div class="btn1">按钮1</div>
+    <div class="btn2">按钮2</div>
+    <div class="btn3">按钮3</div>
+</nav>
+<main>
+    <aside>
+        <dl>
+        <img src="img/add.png" alt="">
+        <img src="img/minus.png" alt="">
+        <dt>打野位置</dt>
+        <dd>蜘蛛女王</dd>
+        <dd>德邦总管</dd>
+        <dd>无极大师</dd>
+
+    </dl>
+        <dl>
+        <img src="img/add.png" alt="">
+        <img src="img/minus.png" alt="">
+        <dt>射手位置</dt>
+        <dd>伊泽瑞尔</dd>
+        <dd>瘟疫之源</dd>
+        <dd>寒冰女王</dd>
+
+    </dl>
+    </aside>
+
+
+    <article>内 容</article>
+</main>
+</body>
+
+<style>
+   aside{
+       display: flex;
+       flex-direction: column;
+       background-color: rgb(233, 207, 174);
+       min-width: 170px;
+       max-width: 170px;
+   }
+
+   aside>dl{
+       position: relative;
+       margin-left: 10px;
+   }
+   dl>img{
+       position: absolute;
+       right: 10px;
+       top: 2px;
+       height: 17px;
+       width: 17px;
+       cursor: pointer;
+   }
+
+
+
+   dl>dt{
+       margin-left: 15px;
+       font-weight: bold;
+   }
+   dl>dd{
+       margin-left: 24px;
+       margin-top: 11px;
+   }
+
+    article{
+        flex: 1;
+        background-color: palegoldenrod;
+    }
+
+</style>
+
+
+
+<style>
+    main {
+        display: flex;
+        height: 79vh;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        background-color: darkgreen;
+        height: 30px;
+
+    }
+    nav>div{
+        flex: 1;
+        justify-content: center;
+        margin-left: 3px;
+        margin-right: 12px;
+        max-width: 120px;
+        min-width: 90px;
+    }
+
+
+h2,h3{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+</style>
+<style>
+    @font-face {
+        font-family: Segoe UI;
+        src: url('font/segoeui.ttf'),
+        url('font/segoeuib.ttf'),
+        url('font/segoeuii.ttf'),
+        url('font/segoeuil.ttf'),
+        url('font/segoeuiz.ttf'),
+        url('font/SEGOEUISL.ttf'),
+        url('font/seguisb.ttf');
+    }
+
+    * {
+        font-family: Segoe UI;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+</style>
+
+</html>

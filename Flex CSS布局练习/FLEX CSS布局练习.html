@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<div class="main">
+    <div class="header">
+        Header
+    </div>
+    <div class="nav">
+        <div class="sidebar"></div>
+        <div class="sidebarSecond"></div>
+        <div class="content"></div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+</body>
+
+<style>
+
+
+    .main {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: darkolivegreen;
+        height: 45px;
+    }
+
+    .nav {
+        display: flex;
+        height: 90px;
+        flex-grow: 1;
+    }
+
+
+    /*使用flex-grow进行划分比例*/
+    .sidebar {
+        width: 100px;
+        background-color: orange;
+    }
+
+    .sidebarSecond {
+        width: 50px;
+        background-color: indigo;
+    }
+
+    .content {
+        flex-grow: 1;
+        background-color: pink;
+    }
+
+
+    /*使用flex来进行比例划分*/
+
+    /*.sidebar {*/
+    /*    background-color: yellow;*/
+    /*    flex: 20%;*/
+    /*}*/
+
+    /*.content {*/
+    /*    flex: 80%;*/
+    /*    background-color: pink;*/
+    /*}*/
+
+    .footer {
+        background-color: skyblue;
+        height: 30px;
+
+    }
+
+</style>
+
+</html>
