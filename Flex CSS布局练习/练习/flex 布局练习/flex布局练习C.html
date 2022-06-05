@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="header">
+        Header
+    </div>
+
+    <div class="nav">
+        <div class="sidebar"></div>
+        <div class="sidebarSecond"></div>
+        <div class="rightBar"></div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+
+</body>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main {
+        margin: 0px auto;
+        width: 650px;
+    }
+
+    .header {
+        height: 30px;
+        background-color: greenyellow;
+    }
+    .nav{
+        display: flex;
+        height: 90px;
+    }
+    .sidebar{
+        background-color: orange;
+        flex: 20%;
+    }
+    .sidebarSecond{
+        background-color: purple;
+        flex: 10%;
+    }
+    .rightBar{
+        background-color: deepskyblue;
+        flex: 70%;
+    }
+    .footer{
+        background-color:olivedrab;
+    }
+</style>
+
+</html>

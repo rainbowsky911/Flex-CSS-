@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Html5新特性</h2>
+        <p>让我们一起看看Html5都有哪些新特性把</p>
+    </div>
+
+    <nav class="nav">
+        <img id="bMenu" src="img/menu.png">
+        <div class="btn1">导航1</div>
+        <div class="btn2">导航2</div>
+        <div class="btn3">导航3</div>
+    </nav>
+
+
+    <div class="main">
+       <aside>
+           <dl>
+               <img  class="add" src="img/add.png" alt="">
+               <img  class ="sub"src="img/minus.png" alt="">
+               <dt>语义化标签</dt>
+               <dd>Header</dd>
+               <dd>Main</dd>
+           </dl>
+           <dl>
+               <img  class="add" src="img/add.png" alt="">
+               <img  class ="sub"src="img/minus.png" alt="">
+               <dt>Web存储</dt>
+               <dd>Header</dd>
+               <dd>Main</dd>
+           </dl>
+
+       </aside>
+        <div class="content">内容</div>
+    </div>
+
+<div class="footer">footer</div>
+
+</body>
+
+<style>
+
+    .main{
+        display: flex;
+        height: 78vh;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 170px;
+        max-width: 170px;
+        background-color: rgb(233, 207, 174);
+        user-select: none;
+        /* transition: max-width 0.3s; */
+        transition: min-width 0.3s linear;
+    }
+
+    dl>img{
+        width:17px ;
+        height: 17px;
+        position: absolute;
+        right: 10px;
+        top: 2px;
+    }
+    aside>dl{
+        position: relative;
+        left: 6px;
+        margin-bottom: 6px;
+    }
+    dl>dt{
+        font-weight: bold;
+    }
+
+    dl>dd{
+       position: relative;
+        left: 10px;
+    }
+
+
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 30px;
+        background-color: darkseagreen;
+    }
+    nav div{
+        display: flex;
+        min-width: 88px;
+        margin-left: 3px;
+        margin-right: 12px;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        max-width: 120px;
+
+    }
+
+    .content{
+        background-color: pink;
+        flex-grow: 1;
+    }
+
+
+
+
+
+
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header{
+        background-color: white;
+        font-size: 14px;
+
+    }
+    .header p,h2{
+        margin-left: 5px;
+        margin-top: 5px;
+
+    }
+
+</style>
+
+</html>
